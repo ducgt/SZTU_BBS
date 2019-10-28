@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/tools/tools",
+    "pages/team_sign_in/team_sign_in",
+    "pages/team_room/team_room",
+    "pages/team/team",
+    "pages/team_new_room/team_new_room",
+    "pages/notice/notice",
+    "pages/announce/announce",
+    "pages/school_confirm/school_confirm",
+    "pages/notice_detail/notice_detail",
+    "pages/web-view/web-view",
+    "pages/discuss_room/discuss_room",
+    "pages/enter/enter",
+    "pages/result/result",
+    "pages/book_list/book_list",
+    "pages/gif_play_list/gif_play_list",
+    "pages/gif_play_detail/gif_play_detail",
+    "pages/wolf/wolf",
+    "pages/wolf_role/wolf_role",
+    "pages/wolf_role_2/wolf_role_2",
+    "pages/team_person/team_person",
+    "pages/my_diary/my_diary"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#11a4ff",
+    "navigationBarTitleText": "技大快讯",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#ff7f27",
+    "borderStyle": "white",
+    "backgroundColor": "#11a4ff",
+    "list": [
+      {
+        "pagePath": "pages/tools/tools",
+        "text": "小工具",
+        "iconPath": "images/life_.png",
+        "selectedIconPath": "images/life.png"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "text": "公文通",
+        "iconPath": "images/announce_.png",
+        "selectedIconPath": "images/announce.png"
+      },
+      {
+        "pagePath": "pages/enter/enter",
+        "text": "论坛",
+        "iconPath": "images/study_.png",
+        "selectedIconPath": "images/study.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "calendar": "/components/calendar/index"
+  }
+}

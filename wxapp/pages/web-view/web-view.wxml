@@ -1,0 +1,2 @@
+<!--pages/web-view/web-view.wxml-->
+<web-view src="{{web_view_host}}?id={{user_id}}&token=**********"></web-view>

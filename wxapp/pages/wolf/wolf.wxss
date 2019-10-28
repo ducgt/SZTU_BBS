@@ -1,0 +1,67 @@
+/* pages/wolf/wolf.wxss */
+.bg{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rebeccapurple;
+    z-index: 0;
+}
+.bg_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.choice{
+    position: fixed;
+    height: 40vh;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.choice_item{
+    font-size: 36rpx;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 30rpx;
+    text-align: center;
+    background: #0f4a63;
+    width: 60%;
+    color: white;
+    font-weight: bold;
+}
+.modal_input{
+    text-align: center;
+    font-size: 32rpx;
+    color: #333;
+}
+.room{
+    margin: 2%;
+    color: #222;
+    height: 500rpx;
+}
+.room_item{
+    border-bottom: #aaa solid 1px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 36rpx;
+    padding: 5rpx 0;
+}
+.left{
+    margin-left: 2%;
+    font-size: 40rpx;
+}
+.right{
+    margin-right: 2%;
+    border-radius: 10rpx;
+    padding: 0 10rpx;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

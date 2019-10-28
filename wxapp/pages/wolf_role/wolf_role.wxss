@@ -1,0 +1,111 @@
+/* pages/wolf_role/wolf_role.wxss */
+.bg{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rebeccapurple;
+    z-index: 0;
+}
+.bg_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.page{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    width: 70%;
+    /*background: -webkit-linear-gradient(left, red, black);*/
+    background: -webkit-linear-gradient(left, #54b7cf, #1d4b6d);
+    color: white;
+    font-size: 50rpx;
+    text-align: center;
+    border-radius: 30rpx;
+    margin-top: 10rpx;
+    display: flex;
+    flex-direction: column;
+}
+.user_item{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rpx;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.user_item image{
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 50%;
+}
+.user_item view{
+    font-size: 32rpx;
+    display: flex;
+    align-items: center;
+    margin: 0 10rpx;
+}
+.user_list{
+    height: 40vh;
+    width: 70vw;
+    margin-top: 30rpx;
+    background-color: #f0f0f0;
+    padding: 30rpx;
+    border-radius: 30rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+.right{
+    margin-right: 2%;
+    border-radius: 10rpx;
+    padding: 0 10rpx;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rpx;
+}
+.counts{
+    margin-top: 30rpx;
+    padding: 10rpx;
+    background-color: #0f4a63;
+    border-radius: 20rpx;
+}
+.choice{
+    height: 40vh;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.choice_item{
+    font-size: 36rpx;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 30rpx;
+    text-align: center;
+    background: #0f4a63;
+    width: 60%;
+    color: white;
+    font-weight: bold;
+}
+.btn{
+    background-color: aqua;
+    border-radius: 50%;
+    width: 40rpx;
+    height: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

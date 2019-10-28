@@ -1,0 +1,17 @@
+<!--pages/gif_play_detail/gif_play_detail.wxml-->
+<view class="header" bindtap="preview_image_2">
+  <image src="{{gif_data.gif_url}}" mode="widthFix"></image>
+</view>
+<form bindsubmit="submit_form" bindreset="reset_form" class="form">
+  <view wx:for="{{gif_data.sentence_counts}}" class="input">
+    <view style="font-size: 34rpx">第{{index+1}}句：</view>
+    <input type="text" maxlength="20" name="{{index}}"></input>
+  </view>
+  <button form-type="submit" class="btn">生成图片</button>
+</form>
+<view class="header" wx:if="{{new_gif.length>0}}" style="margin-top: 0rpx" bindtap="preview_image">
+  <view style="font-size: 34rpx">点击下面图片然后长按即可保存</view>
+  <image src="{{new_gif}}" mode="widthFix"></image>
+</view>
+
+

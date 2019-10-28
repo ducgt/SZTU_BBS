@@ -1,0 +1,37 @@
+<!--pages/wolf/wolf.wxml-->
+<view class="bg">
+  <image class="bg_img" src="../../images/wolf_bg.jpg"></image>
+</view>
+<view class="choice">
+  <view class="choice_item" bindtap="create">
+    创建房间
+  </view>
+  <view class="choice_item" bindtap="join">
+    加入房间
+  </view>
+  <view class="choice_item" bindtap="my_rooms">
+    我的房间
+  </view>
+</view>
+<modal hidden="{{input_flag!==1}}" bindcancel="cancel" bindconfirm="create_confirm">
+  <input bindinput="room_name_inp" max-length="12" type="text" placeholder="请输入房间名字" value="{{room_name}}" class="modal_input" focus="{{input_fucus}}"></input>
+</modal>
+<modal hidden="{{input_flag!==2}}" bindcancel="cancel" bindconfirm="join_confirm">
+  <input bindinput="room_num_inp" max-length="12" type="number" value="{{room_num}}" placeholder="请输入房间号码" class="modal_input" focus="{{input_fucus}}"></input>
+</modal>
+<modal hidden="{{input_flag!==3}}" title="我的房间" bindconfirm="cancel" confirm-text="返回" no-cancel="{{true}}">
+  <view style="text-align: center">长按房间可删除或者退出房间</view>
+  <scroll-view class="room" scroll-y="{{true}}">
+    <view wx:if="{{room_data.length===0}}">
+      <view style="font-size: 30rpx;color:#16a8fe">当前你还没有加入或创建任何房间哦！</view>
+    </view>
+    <view wx:for="{{room_data}}" class="room_item" id="{{index}}" bindtap="to_room" bindlongpress="delete_room">
+      <view class="left">
+        {{item.room_data.topic}}
+      </view>
+      <view class="right" style="background-color: {{item.is_room_master?'#a93434':'#11a4ff'}}">
+        {{item.is_room_master?"房主":"成员"}}
+      </view>
+    </view>
+  </scroll-view>
+</modal>

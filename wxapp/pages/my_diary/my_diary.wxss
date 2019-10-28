@@ -1,0 +1,28 @@
+/* pages/my_diary/my_diary.wxss */
+page{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.diary{
+    display: flex;
+    width: 90%;
+    margin-top: 30rpx;
+    padding: 20rpx;
+    border-radius: 20rpx;
+    border: #707070 solid 1px;
+}
+.left{
+    text-align: center;
+    width: 30%;
+    border-right: #707070 solid 2px;
+    padding-right: 20rpx;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 20rpx;
+}

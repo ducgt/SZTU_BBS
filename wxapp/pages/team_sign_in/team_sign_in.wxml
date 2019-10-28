@@ -1,0 +1,28 @@
+<!--pages/team_sign_in/team_sign_in.wxml-->
+<view wx:if="{{room_list.length===0}}">
+  <view style="font-size: 50rpx;color:#16a8fe">当前你还没有加入或创建任何房间哦！</view>
+</view>
+
+<view wx:for="{{room_list}}" class="room_item" id="{{index}}" bindtap="to_room" bindlongpress="delete_room">
+  <view class="header">
+    <view class="topic">{{item.room_data.topic}}</view>
+    <view>ROOM: {{item.room_data.number}}</view>
+  </view>
+  <view>{{item.info.alert}}</view>
+  <view class="body">
+    <view>
+      <view>打卡时间段: {{item.info.time_during}}</view>
+      <view>打卡日期: {{item.info.date_start}}至{{item.info.date_end}}</view>
+    </view>
+    <image wx:if="{{item.is_daka}}" style="width: 120rpx" src="../../images/had_sign.png" id="{{index}}" mode="widthFix"></image>
+    <image wx:else style="width: 120rpx" src="../../images/no_sign.png" id="{{index}}" mode="widthFix" catchtap="to_sign"></image>
+  </view>
+  <view class="footer">已坚持:
+    <text style="font-size: 40rpx">{{item.days}}</text>
+    /{{item.info.during}}天</view>
+</view>
+<modal hidden="{{flag}}" title="打卡日记" bindcancel="cancel" bindconfirm="sign_in">
+  <textarea class="content" placeholder="对自己说:" bindinput="content_input" max-length="50" value="{{content}}">
+
+  </textarea>
+</modal>

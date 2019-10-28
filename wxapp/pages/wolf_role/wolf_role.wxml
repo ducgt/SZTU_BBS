@@ -1,0 +1,54 @@
+<!--pages/wolf_role/wolf_role.wxml-->
+<view class="bg">
+  <image class="bg_img" src="../../images/wolf_bg.jpg"></image>
+</view>
+<view class="page">
+  <view class="header" bindtap="copy">
+    <view>
+      {{room_data.topic}}
+    </view>
+    <view style="font-size: 25rpx;color: #ccc">点我即可复制房间号 下拉刷新用户列表</view>
+    <view style="font-size: 30rpx">
+      房间号: {{room_data.number}}
+    </view>
+  </view>
+  <picker class="counts" range="{{nums}}" bindchange="change_counts">
+    房间最大人数: {{room_data.max_user_counts}}
+  </picker>
+  <scroll-view scroll-y="{{true}}" class="user_list">
+    <view wx:for="{{user_list}}" class="user_item" id="{{index}}" bindlongpress="delete_user">
+      <image src="{{item.user_image}}"></image>
+      <view style="width: 60%">{{item.name}}</view>
+      <view class="right"  style="text-align: right;background-color: {{item.id==room_data.user_id?'#a93434':'#11a4ff'}}">
+        {{item.id===room_data.user_id?"房主":"成员"}}
+      </view>
+    </view>
+  </scroll-view>
+  <view class="choice">
+    <view class="choice_item" wx:if="{{user_id==room_data.user_id}}" bindtap="auto_distribute">
+      系统自动分配
+    </view>
+    <view class="choice_item" wx:if="{{user_id==room_data.user_id}}" bindtap="user_distribute">
+      手动选择各角色人数
+    </view>
+    <view class="choice_item" bindtap="see_role">
+      查看身份牌
+    </view>
+  </view>
+</view>
+<modal hidden="{{flag}}" bindcancel="cancel" bindconfirm="to_distribute" title="手动选择各角色人数">
+  <scroll-view scroll-y="{{true}}" class="user_list">
+    <view wx:for="{{role_list}}" class="user_item" id="{{index}}" bindlongpress="delete_user">
+      <image src="{{item.img}}"></image>
+      <view style="width: 30%">{{item.role}}</view>
+      <view>
+        <view class="btn" id="{{index}}" bindtap="less">-</view>
+        <view>{{item.counts}}</view>
+        <view class="btn" id="{{index}}" bindtap="add">+</view>
+      </view>
+    </view>
+  </scroll-view>
+</modal>
+
+
+

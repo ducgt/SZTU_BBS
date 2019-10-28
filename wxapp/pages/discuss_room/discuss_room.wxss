@@ -1,0 +1,45 @@
+/* pages/user_info/user_info.wxss */
+page{
+    background-color: #f1f0f5;
+}
+.info_form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30rpx;
+    background-color: white;
+    border-radius: 30rpx;
+    margin-top: 80rpx;
+}
+.form-item{
+    margin: 0 2%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: lightgrey solid 1px;
+    font-size: 16px;
+    height: 100rpx;
+    align-items: center;
+}
+.form-item text{
+    width: 30%;
+}
+.line-head{
+
+}
+.btn{
+    position: fixed;
+    top: 10rpx;
+    right: 4%;
+    width: 15%;
+    font-size: 24rpx;
+}
+._form-item{
+    margin: 0 2%;
+    padding: 25rpx 0;
+    display: flex;
+    flex-direction: row;
+    border-bottom: lightgrey solid 1px;
+    font-size: 16px;
+}
+._form-item text{
+    width: 30%;
+}

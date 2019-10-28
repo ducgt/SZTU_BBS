@@ -1,0 +1,140 @@
+{
+    "pages": [ //pages数组中第一项表示应用启动页,
+        {
+            "path" : "pages/index/index",
+            "style" : {
+				"enablePullDownRefresh":true
+			}
+        }
+        ,{
+            "path" : "pages/index_2/index_2",
+            "style" : {
+				"enablePullDownRefresh":true
+			}
+        }
+        ,{
+            "path" : "pages/notice/notice",
+            "style" : {
+				"navigationBarTitleText":"公文通"
+			}
+        }
+        ,{
+            "path" : "pages/model_detail/model_detail",
+            "style" : {
+              "enablePullDownRefresh":true,
+			  "navigationBarTitleText":"版块详情"
+            }
+        }
+        ,{
+            "path" : "pages/topic_detail/topic_detail",
+            "style" : {
+				"navigationBarTitleText":"话题详情"
+			}
+        }
+        ,{
+            "path" : "pages/notice_detail/notice_detail",
+            "style" : {
+				"navigationBarTitleText":"公文通详情"
+			}
+        }
+        ,{
+            "path" : "pages/announce/announce",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/publish/publish",
+            "style" : {
+				"navigationBarTitleText":"发布"
+			}
+        }
+        ,{
+            "path" : "pages/result/result",
+            "style" : {
+				"navigationBarTitleText":"发布结果"
+			}
+        }
+        ,{
+            "path" : "pages/user_info/user_info",
+            "style" : {
+				"navigationBarTitleText":"个人信息"
+			}
+        }
+        ,{
+            "path" : "pages/school_confirm/school_confirm",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my_comment_topic/my_comment_topic",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my_like_topic/my_like_topic",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/link_to_me/link_to_me",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my_publish/my_publish",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/about_app/about_app",
+            "style" : {}
+        }
+		,{
+		    "path" : "pages/index_3/index_3",
+		    "style" : {
+				"enablePullDownRefresh":true
+			}
+		}
+        ,{
+            "path" : "pages/anouym_detail/anouym_detail",
+            "style" : {}
+        }
+		,{
+            "path" : "pages/anouym/anouym",
+            "style" : {}
+		}
+		,{
+			"path" : "pages/register/register",
+			"style" : {}
+		}
+    ],
+    "tabBar": {
+        "color": "#fff",
+        "selectedColor": "#ff7f27",
+        "backgroundColor": "#11a4ff",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "生活",
+            "iconPath": "static/img/life_.png",
+            "selectedIconPath": "static/img/life.png"
+        }, {
+            "pagePath": "pages/index_3/index_3",
+            "text": "事务",
+            "iconPath": "static/img/announce_.png",
+            "selectedIconPath": "static/img/announce.png"
+        }, {
+            "pagePath": "pages/index_2/index_2",
+            "text": "学习",
+            "iconPath": "static/img/study_.png",
+            "selectedIconPath": "static/img/study.png"
+        }]
+    },
+    "globalStyle": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText":"技大快讯"
+    },
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

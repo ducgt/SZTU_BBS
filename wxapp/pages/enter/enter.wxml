@@ -1,0 +1,7 @@
+<!--pages/school_confirm/school_confirm.wxml-->
+<view class="header">
+  <image src="../../images/logo_.png"></image>
+  <view style="font-size: 80rpx; margin-top: -30rpx;font-family: art">技大论坛</view>
+</view>
+<view bindtap="to_webview" class="submit">进入论坛</view>
+

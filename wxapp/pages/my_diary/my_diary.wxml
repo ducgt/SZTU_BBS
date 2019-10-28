@@ -1,0 +1,15 @@
+<!--pages/my_diary/my_diary.wxml-->
+<view wx:if="{{diary_list.length===0}}">
+  <view style="font-size: 50rpx;color:#16a8fe">当前你还没有签到过哦！</view>
+</view>
+<view wx:for="{{diary_list}}" class="diary">
+  <view class="left">
+    <view style="font-size: 100rpx;font-weight:bold;color:#16a8fe">{{item.day}}</view>
+    <view style="font-size: 50rpx;color:#16a8fe">{{MONTHS_EN[item.month]}}</view>
+  </view>
+  <view class="right">
+    <view style="font-size: 32rpx">{{item.content}}</view>
+    <view style="font-size: 28rpx;color: #9f9f9f;text-align:right">{{item.time}}</view>
+  </view>
+</view>
+

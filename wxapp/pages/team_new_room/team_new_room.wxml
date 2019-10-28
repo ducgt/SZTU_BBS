@@ -1,0 +1,49 @@
+<!--pages/team _new_room/team_new_room.wxml-->
+<view class="info">
+  <input placeholder="请输入打卡目标" value="{{topic}}" maxlength="10" bindinput="topic_inp"></input>
+  <input placeholder="请输入打卡团队宣言" value="{{alert}}" maxlength="20" bindinput="alert_inp"></input>
+</view>
+<view class="time">
+  <view class="time_during">
+    <view class="circle"></view>
+    <view class="main">
+      <view>
+        <view style="margin: 10rpx 0;font-size:28rpx;color: #a9a9a9">开始时间</view>
+        <picker style="color: #16a8fe;font-size: 32rpx" mode="date" start="{{start}}" end="{{end}}" bindchange="date_start_change">
+          {{date_start}}
+        </picker>
+        <view style="margin: 10rpx 0;font-size:28rpx;color: #000" wx:if="{{during>0}}">持续{{during}}天</view>
+        <view style="margin: 10rpx 0;font-size:28rpx;color: #f00" wx:else>日期不合法</view>
+      </view>
+      <view>
+        <view style="margin: 10rpx 0;font-size:28rpx;color: #a9a9a9">结束时间</view>
+        <picker style="color: #16a8fe;font-size: 32rpx" mode="date" start="{{start}}" end="{{end}}" bindchange="date_end_change">
+          {{date_end}}
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view style="display: flex">
+    <view class="circle"></view>
+    <view style="margin: 0 20rpx;width:80%">
+      <view style="margin: 10rpx 0;font-size:28rpx;color: #a9a9a9">打卡时间设置</view>
+      <view class="time_select">
+        <picker mode="time" bindchange="time_start_change">
+          {{time_start}}
+        </picker>
+         {{" - "}}
+        <picker mode="time" bindchange="time_end_change">
+          {{time_end}}
+        </picker>
+      </view>
+    </view>
+  </view>
+</view>
+<button class="btn" bindtap="new_room">生成房间</button>
+<modal hidden="{{flag}}" title="提示" bindconfirm="to_room" no-cancel="{{true}}" confirm-text="进入房间">
+  <view class="alert">
+    <view style="color: #000">您的房间号是:</view>
+    <view style="color: #16a8fe;font-size:86rpx;letter-spacing: 20rpx" bindtap="copy">{{room_data.room_data.number}}</view>
+    <view style="color: #aaa;font-size:20rpx">点击数字可以复制房间号</view>
+  </view>
+</modal>

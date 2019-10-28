@@ -1,0 +1,53 @@
+/* pages/wolf_role_2/wolf_role_2.wxss */
+.bg{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rebeccapurple;
+    z-index: 0;
+}
+.bg_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.page{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 34rpx;
+}
+.page image{
+    width: 600rpx;
+    height: 600rpx;
+    margin-top: 30rpx;
+}
+.introduce{
+    margin-top: 30rpx;
+    width: 60%;
+    padding: 30rpx;
+    background-color: #cccccc;
+    border-radius: 50rpx;
+}
+.role{
+    padding: 0 10rpx;
+    border-radius: 20rpx;
+    background: cadetblue;
+    color: white;
+    height: 60rpx;
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.warn{
+    background: firebrick;
+    color: white;
+    padding: 15rpx;
+    border-radius: 30rpx;
+}

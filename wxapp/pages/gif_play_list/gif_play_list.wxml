@@ -1,0 +1,9 @@
+<!--pages/gif_play_list/gif_play_list.wxml-->
+<navigator wx:for="{{gif_list}}" url="../gif_play_detail/gif_play_detail?id={{item.id}}" class="list">
+  <view class="left">
+    <image src="{{item.picture_url}}" ></image>
+  </view>
+  <view class="right">
+    {{item.name_to_user}}
+  </view>
+</navigator>

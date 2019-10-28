@@ -1,0 +1,2 @@
+<!--pages/notice_detail/notice_detail.wxml-->
+<image bindtap="preview_image" class="img" mode="widthFix" src="{{notice_data.detail_image_url}}"></image>

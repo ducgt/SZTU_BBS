@@ -1,0 +1,43 @@
+<!--pages/notice/notice.wxml-->
+<view class="page" wx:if="{{user_info.true_name.length>0}}">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar" style="background-color: #fff">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <view class="line_">
+            <view class="title_">标题</view>
+            <view class="date_">发布日期</view>
+          </view>
+          <navigator url="../notice_detail/notice_detail?id={{item.id}}" class="line" style="{{index%2===1?'background-color: #f1f7fc;':''}}" wx:for="{{notice_data_left}}">
+            <view class="title">{{item.title}}</view>
+            <view class="date">{{item.date}}</view>
+          </navigator>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <view class="line_">
+            <view class="title_">标题</view>
+            <view class="date_">发布日期</view>
+          </view>
+          <navigator url="../notice_detail/notice_detail?id={{item.id}}" class="line" style="{{index%2===1?'background-color: #f1f7fc;':''}}" wx:for="{{notice_data_right}}">
+            <view class="title">{{item.title}}</view>
+            <view class="date">{{item.date}}</view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else class="to_confirm">
+  <button class="weui-btn" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击绑定教务系统</button>
+</view>
+<!--<view catchtap="to_webview" class="personal_tip">-->
+<!--  <image src="../../images/circle.png"></image>-->
+<!--</view>-->

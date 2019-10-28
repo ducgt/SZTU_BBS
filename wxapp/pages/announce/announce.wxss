@@ -1,0 +1,44 @@
+/* pages/announce/announce.wxss */
+page{
+    margin: 20rpx 2%;
+    width: 96%;
+}
+.page{
+    border-radius: 40rpx;
+    background-color: rgba(255,255,0,0.3);
+    padding: 30rpx 2%;
+}
+.header{
+    font-size: 22px;
+    margin-bottom: 30rpx;
+    text-align: center;
+}
+.session{
+    margin-bottom: 20rpx;
+}
+.title{
+    font-size: 18px;
+}
+.content-item{
+    display: flex;
+    margin-bottom: 10rpx;
+}
+.left{
+    width: 15%;
+}
+.right{
+    width: 85%;
+}
+.button{
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    left: 0;
+    margin-left: 10%
+}
+.check{
+  padding: 0 10rpx;
+  border-radius: 5rpx;
+  text-align: center;
+  background-color: #FFF
+}

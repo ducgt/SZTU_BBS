@@ -1,0 +1,19 @@
+<!--pages/team_person/team_person.wxml-->
+<calendar style="width:90%;margin:30rpx 0;background-color:#fff;border-radius:40rpx" showMoreDays="{{false}}" daysStyle="{{days}}"/>
+<view class="daka">
+  <image src="../../images/days.png" mode="widthFix"></image>
+  <view class="right">
+    <view style="text-align:center">
+      <view class="counts_text">已坚持天数</view>
+      <view style="color: #16a8fe">
+        <text style="font-size:50rpx">{{room_data.days}}</text>
+        <text style="font-size:36rpx">/</text>
+        <text>{{room_data.info.during}}</text>
+      </view>
+    </view>
+    <view style="text-align:center">
+      <view class="counts_text">已连续打卡</view>
+      <view style="font-size:50rpx;color: #16a8fe">{{series_days}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/tools/tools.wxml-->
+<view class="model">
+  <navigator hover-class="none" wx:for="{{tools}}" style="background-color: {{item.color}}" class="model-item" url="{{item.url}}">
+    <view style="margin-top: 25rpx;">
+      <image lazy-load='{{true}}' src="{{item.img}}" mode="widthFix"></image>
+    </view>
+    <text style="margin-top: 5rpx;font-size: 16px">{{item.name}}</text>
+  </navigator>
+</view>

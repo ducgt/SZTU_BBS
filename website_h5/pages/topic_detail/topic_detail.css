@@ -1,0 +1,226 @@
+/* pages/topic_detail/topic_detail.wxss */
+page{
+    word-break: normal;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    margin: 1% 3%;
+}
+.publisher_image{
+    width: 75upx;
+    height: 75upx;
+}
+.publisher_image image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.pubilsher_name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.publisher_info{
+    position: relative;
+    width: 86%;
+    margin:0 2%;
+}
+.publisher_info image{
+    width: 30upx;
+    height: 30upx;
+}
+.tip{
+    background-color: #89d8e7;
+    padding: 0 10upx;
+    border-radius: 10%;
+    font-size: 12px;
+    color: #fff;
+}
+.publish_date{
+    font-size: 12px;
+    color: lightgrey;
+    position: absolute;
+    bottom: -7upx;
+}
+.header{
+    width: 94%;
+    margin: 0 3%;
+}
+.title{
+    margin: 20upx 0;
+    font-size: 19px;
+}
+.counts{
+    display: flex;
+    flex-direction: row;
+    margin: 5upx 0;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+}
+.left view{
+    height: 20px;
+    font-size: 14px;
+    color: #888888;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+.left view image{
+    width: 20px;
+    height: 20px;
+}
+.right{
+    padding: 0 5upx;
+    background-color: lightgrey;
+    border-radius: 20%;
+    color: #888888;
+}
+.body{
+    width: 94%;
+    margin: 0 3%;
+    margin-top: 10upx;
+    padding-bottom: 50upx;
+    word-break: break-word;
+}
+.img-list{
+    text-align: center;
+    width: 100%;
+}
+.img-list image{
+    margin-top: 10upx;
+    width: 100%;
+}
+.comment-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: #f1f0f5 solid 7px;
+    border-bottom: lightgrey solid 1px;
+    padding: 10upx 0;
+    padding-right: 2%;
+    font-size: 16px;
+}
+.left-border{
+    border-left: deepskyblue solid 3px;
+}
+.comment-date{
+    height: 20px;
+    font-size: 12px;
+    color: #888888;
+}
+.comment-item{
+    width: 96%;
+    border-bottom: lightgrey solid 1px;
+}
+.comment-content{
+    width: 100%;
+    font-size: 14px;
+}
+.comment-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.comment-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.comment-left view{
+    height: 20px;
+    font-size: 18px;
+    color: #888888;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+.comment-left view image{
+    width: 50upx;
+    height: 50upx;
+}
+.comment-input{
+    position: fixed;
+    bottom: 0;
+    height: 110upx;
+    background-color: #f5f5f5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inline{
+    display: flex;
+    flex-direction: row;
+    margin: 0 2%;
+    align-items: center;
+    justify-content: center;
+    height: 100upx;
+    width: 100%;
+}
+.inline input{
+    width: 70%;
+    border: 1px white solid;
+    background-color: #fff;
+    height: 70upx;
+    margin: 15upx 0;
+    border-radius: 20upx;
+    padding-left: 4px;
+}
+.inline view{
+    height: 70upx;
+    margin: 15upx 0;
+    margin-left: 30upx;
+    width: 16%;
+    font-size: 16px;
+    background-color: #67b8f9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.inline image{
+    height: 70upx;
+    width: 70upx;
+    margin: 10upx;
+}
+.commenter_image{
+    margin-top: 10upx;
+    width: 60upx;
+    height: 60upx;
+}
+.commenter_image image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.reply{
+    width: 95%;
+    padding: 2% 3%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+.reply-item{
+    font-size: 14px;
+}
+.goTop{
+    height: 80upx;
+    width: 80upx;
+    position: fixed;
+    bottom: 120upx;
+    background: rgba(0,0,0,.3);
+    right: 30upx;
+    border-radius: 50%;
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

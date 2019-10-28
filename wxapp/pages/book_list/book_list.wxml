@@ -1,0 +1,19 @@
+<!--pages/book_list/book_list.wxml-->
+<view wx:for="{{book_info}}" class="book_item" bindlongpress="delete_book" id="{{item.id}}" data-status="{{item.status}}">
+  <view class="header">
+    <view>{{item.discuss_topic}}</view>
+    <view style="color: {{status_color[item.status]}}">{{status[item.status]}}</view>
+  </view>
+  <view>第二学号: {{item.school_account_2}}</view>
+  <view>{{item.college}}</view>
+  <view>
+    <view>申请时段: {{item.start}} — {{item.end}}</view>
+  </view>
+  <view>提交时间: {{item.create_time}}</view>
+</view>
+<view style="text-align: center" class="none">
+  <text wx:if="{{book_info.length===0}}">当前你还没有申请过研讨室哦！\n点击右下角即可申请</text>
+</view>
+
+
+<image src='../../images/publish.png' class='goTop' catchtap="book"></image>

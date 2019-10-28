@@ -1,0 +1,12 @@
+<!--pages/team/team.wxml-->
+<view class="bg">
+  <image class="bg_img" src="../../images/team_bg.png"></image>
+</view>
+<view class="page">
+  <image src="../../images/team_1.png" mode="widthFix"></image>
+  <image src="../../images/team_2.png" mode="widthFix" bindtap="create_room"></image>
+  <image src="../../images/team_3.png" mode="widthFix" bindtap="to_sign_in"></image>
+</view>
+<modal hidden="{{flag}}" bindcancel="cancel" bindconfirm="join">
+  <input bindinput="room_num_inp" max-length="12" type="number" value="{{room_num}}" placeholder="请输入房间号码" class="modal_input" focus="{{input_fucus}}"></input>
+</modal>

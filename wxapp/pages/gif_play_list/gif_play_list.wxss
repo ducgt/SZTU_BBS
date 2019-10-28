@@ -1,0 +1,38 @@
+/* pages/gif_play_list/gif_play_list.wxss */
+page{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25rpx;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50rpx 0;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 5rpx;
+    border-radius: 20rpx;
+    border: deepskyblue 1px solid;
+    margin-bottom: 30rpx;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #959595;
+    color: white;
+    font-size: 26rpx;
+    border-radius: 20rpx;
+}
+.left image{
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 20rpx;
+    margin: 2%;
+}

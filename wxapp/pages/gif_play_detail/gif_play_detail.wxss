@@ -1,0 +1,36 @@
+/* pages/gif_play_detail/gif_play_detail.wxss */
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.header image{
+    width: 80%;
+    margin: 30rpx 0;
+}
+.form{
+    width: 96%;
+    padding: 1% 2%;
+}
+.input input{
+    width: 75%;
+    border-radius: 10rpx;
+    border: #555 solid 1px;
+    margin: 1%;
+    padding: 10rpx;
+}
+.input{
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 80%;
+    background-color: #fcbe5c;
+    color: white;
+    margin-top: 50rpx;
+}

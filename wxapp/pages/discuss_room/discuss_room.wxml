@@ -1,0 +1,48 @@
+<view class="info_form">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="form-item">
+      <text class="line-head">申请人</text>
+      <text>{{user_info.true_name}}</text>
+    </view>
+    <view class="form-item">
+      <text class="line-head">学号 1</text>
+      <text>{{user_info.school_account}}</text>
+    </view>
+    <view class="form-item">
+      <text class="line-head">学号 2</text>
+      <input type="number" value="{{school_account_2}}" maxlength="15" name="school_account_2"></input>
+    </view>
+    <view class="form-item">
+      <text class="line-head">学院</text>
+      <picker style="width:60%" value="{{college}}" range="{{college_list}}" bindchange="change_college">
+        {{college}}
+      </picker>
+    </view>
+    <view class="form-item">
+      <text class="line-head">手机号码</text>
+      <input type="number" maxlength="11" value="{{mobile}}" name="mobile"></input>
+    </view>
+    <view class="form-item">
+      <text class="line-head">开始时间</text>
+      <picker class='time-picker' mode="multiSelector" bindchange="start_change" bindtap='pickerTap' value="{{multiIndex}}" range="{{multiArray}}">
+        {{start}}
+      </picker>
+    </view>
+    <view class="form-item">
+      <text class="line-head">结束时间</text>
+      <picker class='time-picker' mode="multiSelector" bindchange="end_change" bindtap='pickerTap' value="{{multiIndex}}" range="{{multiArray}}">
+        {{end}}
+      </picker>
+    </view>
+    <view class="form-item">
+      <text class="line-head">讨论主题</text>
+      <input type="text" maxlength="20" value="{{discuss_topic}}" name="discuss_topic"></input>
+    </view>
+    <view class="form-item">
+      <text class="line-head">人数</text>
+      <input type="number" maxlength="2" value="{{nums}}" name="nums"></input>
+    </view>
+    <button form-type="submit" type="primary">提交</button>
+    <button form-type="reset">清空</button>
+  </form>
+</view>

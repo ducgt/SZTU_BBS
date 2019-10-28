@@ -1,0 +1,84 @@
+<!--pages/team_room/team_room.wxml-->
+<!--<view class="room_info">-->
+<!--  <view>我们的目标</view>-->
+<!--  <view>我们的宣言</view>-->
+<!--  <view class="line">-->
+<!--    <view>-->
+<!--      <view class="counts_text">开始日期</view>-->
+<!--      <view>2019-10-10</view>-->
+<!--    </view>-->
+<!--    <view>-->
+<!--      <view class="counts_text">结束日期</view>-->
+<!--      <view>2019-11-10</view>-->
+<!--    </view>-->
+<!--  </view>-->
+<!--  <view class="line">-->
+<!--    <view>-->
+<!--      <view class="counts_text">每日签到开始</view>-->
+<!--      <view>00:00</view>-->
+<!--    </view>-->
+<!--    <view>-->
+<!--      <view class="counts_text">每日签到结束</view>-->
+<!--      <view>00:00</view>-->
+<!--    </view>-->
+<!--  </view>-->
+
+<!--</view>-->
+<calendar bindOnDayClick="onDayClick"  style="width:90%;margin:30rpx 0;background-color:#fff;border-radius:40rpx" showMoreDays="{{false}}" daysStyle="{{days}}"/>
+<view class="daka">
+  <image src="../../images/days.png" mode="widthFix"></image>
+  <view class="right">
+    <view style="text-align:center">
+      <view class="counts_text">已坚持天数</view>
+      <view style="color: #16a8fe">
+        <text style="font-size:50rpx">{{room_data.days}}</text>
+        <text style="font-size:36rpx">/</text>
+        <text>{{room_data.info.during}}</text>
+      </view>
+    </view>
+    <view style="text-align:center">
+      <view class="counts_text">已连续打卡</view>
+      <view style="font-size:50rpx;color: #16a8fe">{{series_days}}</view>
+    </view>
+    <image wx:if="{{room_data.is_daka}}" style="width: 80rpx" src="../../images/had_sign.png" mode="widthFix"></image>
+    <image wx:else style="width: 80rpx" src="../../images/no_sign.png" mode="widthFix" catchtap="to_sign"></image>
+  </view>
+</view>
+<view class="my_diary" bindtap="to_my_diary">
+  <image style="width: 140rpx" src="../../images/diary_.png" mode="widthFix"></image>
+  <view style="width:46%;font-size:36rpx;color:#707070">我的日记本</view>
+  <image style="width: 80rpx" src="../../images/right.png" mode="widthFix"></image>
+</view>
+<view class="users">
+  <view class="header">
+    <view class="left">
+      <image src="../../images/users.png" mode="widthFix"></image>
+      <text style="font-size:36rpx">房间成员</text>
+      <image src="../../images/delete.png" mode="widthFix" bindtap="show_delete"></image>
+    </view>
+    <view style="font-size:36rpx">ROOM: {{room_data.room_data.number}}</view>
+<!--    <view>ROOM: {{room_data.number}}</view>-->
+  </view>
+  <scroll-view class="body" scroll-y="{{true}}">
+    <view wx:for="{{user_list}}" class="user_list">
+      <image wx:if="{{delete_flag}}" id="{{index}}" src="../../images/delete.png" bindtap="delete_user" style="width: 70rpx;margin-top:20rpx" mode="widthFix"></image>
+      <view  class="user_item" bindtap="to_person_info" id="{{index}}">
+        <view class="left_">
+          <image style="width: 80rpx;border-radius: 50%" src="../../images/right.png" mode="widthFix" src="{{item.user_image}}"></image>
+          <view style="margin-left:20rpx;font-size:36rpx;color: #707070">{{item.name}}</view>
+        </view>
+        <view class="right_">
+          <image wx:if="{{item.is_daka}}" style="width: 80rpx" src="../../images/had_sign.png" mode="widthFix"></image>
+          <image wx:else style="width: 80rpx" src="../../images/no_sign.png" mode="widthFix"></image>
+          <image style="width: 80rpx" src="../../images/right.png" mode="widthFix"></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<modal hidden="{{flag}}" title="打卡日记" bindcancel="cancel" bindconfirm="sign_in">
+  <textarea class="content" placeholder="对自己说:(可以为空)" max-length="50" bindinput="content_input" value="{{content}}">
+
+  </textarea>
+</modal>
+

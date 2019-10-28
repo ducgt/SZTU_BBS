@@ -1,0 +1,8 @@
+@font-face {
+  font-family: art;
+  src: local('../static/font/art.ttf');
+}
+@font-face {
+  font-family: logo;
+  src: local('../static/font/logo.ttf');
+}

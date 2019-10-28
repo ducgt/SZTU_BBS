@@ -1,0 +1,12 @@
+<!--pages/wolf_role_2/wolf_role_2.wxml-->
+<view class="bg">
+  <image class="bg_img" src="../../images/wolf_bg.jpg"></image>
+</view>
+<view class="page">
+  <view class="warn">注意: 请在房主开始分配角色后开始查看角色，避免查看的角色为上次的角色，下拉可刷新</view>
+  <image src="{{role_list[role].img}}"></image>
+  <view class="role">{{role}}</view>
+  <view class="introduce">
+    {{role_list[role].introduce}}
+  </view>
+</view>

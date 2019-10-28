@@ -1,0 +1,26 @@
+<!--pages/announce/announce.wxml-->
+<view class="page" style="{{had_button?'margin-bottom: 100rpx;':''}}">
+  <view class="header">用户协议</view>
+  <view wx:for="{{announce}}" class="session" wx:for-item="session_item">
+    <view class="title">{{session_item.title}}</view>
+    <view wx:for="{{session_item.item}}" class="content" wx:for-item="content_item">
+      <view class="content-item">
+        <view class="left">
+          第{{index+1}}条
+        </view>
+        <view class="right">
+          {{content_item.content}}
+          <view wx:for="{{content_item.detail}}">
+            <view class="detail">{{item}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view  wx:if="{{had_button}}" class="button">
+  <checkbox-group style="text-align: center" bindchange="checkboxChange">
+    <checkbox class="check" value="check" checked="{{checked}}">我同意以上用户协议</checkbox>
+  </checkbox-group>
+  <button type="primary" bindtap="agree" style="border-radius: 50rpx;height: 80rpx">下一步</button>
+</view>

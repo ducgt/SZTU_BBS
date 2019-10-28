@@ -1,0 +1,15 @@
+/* pages/book_list/book_list.wxss */
+.book_item{
+    margin: 20rpx 2% 0 2%;
+    border: deepskyblue solid 2rpx;
+    border-radius: 20rpx;
+    width: auto;
+    padding: 20rpx 20rpx;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.none{
+    margin-top: 100rpx;
+}

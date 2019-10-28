@@ -1,0 +1,22 @@
+<!--pages/school_confirm/school_confirm.wxml-->
+<view class="header">
+  <image src="../../images/logo_.png"></image>
+  <view style="font-size: 80rpx; margin-top: -30rpx;font-family: art">技大快讯</view>
+  <view>教务系统验证</view>
+</view>
+<view class="form">
+  <view class="input">
+    <view>
+      <image src="../../images/account.png"></image>
+    </view>
+    <input type="number" placeholder="请输入学号" bindinput="account"></input>
+  </view>
+  <view class="input">
+    <view>
+      <image src="../../images/password.png"></image>
+    </view>
+    <input type="password" placeholder="请输入密码" bindinput="password"></input>
+  </view>
+  <view bindtap="submit" class="submit">登录</view>
+</view>
+

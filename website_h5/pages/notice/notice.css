@@ -1,0 +1,59 @@
+/* pages/notice/notice.wxss */
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+
+}
+.line_{
+    display: flex;
+    padding: 1% 0;
+    background-color: #1e71bf;
+}
+.title_{
+    width: 80%;
+    font-size: 30upx;
+    text-align: center;
+    color: white;
+}
+.date_{
+    width: 20%;
+    font-size: 30upx;
+    text-align: center;
+    color: white;
+}
+.title{
+    width: 80%;
+    font-size: 28upx;
+    margin: 1%;
+}
+.line{
+    display: flex;
+    background-color: #f8f8f8;
+}
+.date{
+    width: 18%;
+    font-size: 25upx;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to_confirm{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    background-color: limegreen;
+    padding: 15upx;
+    border-radius: 15upx;
+    width: 50%;
+}
