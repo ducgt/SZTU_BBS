@@ -3,6 +3,8 @@
 
 小程序已上线
 
+若图片无法显示，微信搜索技大快讯即可体验小程序
+
 ![image](https://github.com/XuShiKang/SZTU_BBS/blob/master/demo_img/qrcode.png)
 
 ## 前端
