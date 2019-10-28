@@ -3,7 +3,7 @@
 
 小程序已上线
 
-![image](demo_img/qrcode.png)
+![image](https://github.com/XuShiKang/SZTU_BBS/demo_img/qrcode.png)
 
 ## 前端
 ***
@@ -28,18 +28,18 @@
 ***
 ### 小程序页面
 
-<img src="demo_img/tools.png" width = "30%" style="margin: 1%" alt="图片名称" align=center />
-<img src="demo_img/notice.jpg" width = "30%" style="margin: 1%" alt="图片名称" align=center />
-<img src="demo_img/enter.jpg" width = "30%" style="margin: 1%" alt="图片名称" align=center />
+<img src="https://github.com/XuShiKang/SZTU_BBS/demo_img/tools.png" width = "30%" style="margin: 1%" alt="图片名称" align=center />
+<img src="https://github.com/XuShiKang/SZTU_BBS/demo_img/notice.jpg" width = "30%" style="margin: 1%" alt="图片名称" align=center />
+<img src="https://github.com/XuShiKang/SZTU_BBS/demo_img/enter.jpg" width = "30%" style="margin: 1%" alt="图片名称" align=center />
 
 ### H5论坛页面
 
-<img src="demo_img/index0.png" width = "30%" style="margin: 1%" alt="图片名称" align=center />
-<img src="demo_img/index1.png" width = "30%" style="margin: 1%" alt="图片名称" align=center />
-<img src="demo_img/index2.png" width = "30%" style="margin: 1%" alt="图片名称" align=center />
-<img src="demo_img/topic_list.jpg" width = "30%" style="margin: 1%" alt="图片名称" align=center />
-<img src="demo_img/topic_detail.jpg" width = "30%" style="margin: 1%" alt="图片名称" align=center />
-<img src="demo_img/topic_detail_.png" width = "30%" style="margin: 1%" alt="图片名称" align=center />
+<img src="https://github.com/XuShiKang/SZTU_BBS/demo_img/index0.png" width = "30%" style="margin: 1%" alt="图片名称" align=center />
+<img src="https://github.com/XuShiKang/SZTU_BBS/demo_img/index1.png" width = "30%" style="margin: 1%" alt="图片名称" align=center />
+<img src="https://github.com/XuShiKang/SZTU_BBS/demo_img/index2.png" width = "30%" style="margin: 1%" alt="图片名称" align=center />
+<img src="https://github.com/XuShiKang/SZTU_BBS/demo_img/topic_list.jpg" width = "30%" style="margin: 1%" alt="图片名称" align=center />
+<img src="https://github.com/XuShiKang/SZTU_BBS/demo_img/topic_detail.jpg" width = "30%" style="margin: 1%" alt="图片名称" align=center />
+<img src="https://github.com/XuShiKang/SZTU_BBS/demo_img/topic_detail_.png" width = "30%" style="margin: 1%" alt="图片名称" align=center />
 
 ## 后端
 ***
@@ -56,7 +56,7 @@
 
 ### 后台管理界面
 
-![image](demo_img/bg.png)
+![image](https://github.com/XuShiKang/SZTU_BBS/demo_img/bg.png)
 
 ## 如何在你的电脑运行起来
 
